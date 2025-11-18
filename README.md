@@ -1,4 +1,4 @@
-#scripts
+# scripts
 scripts de instalaciones configuraciones etc, para void..
 
 ## descargar 
