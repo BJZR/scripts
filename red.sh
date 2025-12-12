@@ -3,7 +3,7 @@
 echo "=== Información de Red ==="
 
 # IP local
-local_ip=$(hostname -I 2>/dev/null | awk '{print $1}')
+local_ip=$(hostname)
 echo "IP local: ${local_ip:-No detectada}"
 
 # IP pública
