@@ -1,5 +1,5 @@
 # scripts
-scripts de instalaciones configuraciones etc, para void..
+scripts de instalaciones configuraciones etc, para cualquier distro linux..
 
 ## descargar 
 ~~~
