@@ -3,12 +3,12 @@ scripts de instalaciones configuraciones etc, para void..
 
 ## descargar 
 ~~~
-git clone https://github.com/BJZR/Void-scipts.git
+git clone https://github.com/BJZR/scipts-linux.git
 ~~~
 
 ## carpeta
 ~~~
-cd Void-scripts
+cd scripts-linux
 ~~~
 
 ## permisos
