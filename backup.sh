@@ -9,7 +9,7 @@ BASHRC="$HOME/.bashrc"
 ZSHRC="$HOME/.zshrc"
 SCRIPTS_DIR="/home/bjzr/Proyectos/sh/scripts"
 
-# Carpeta donde se guardarán los respaldos
+# Carpeta donde se guardarÃ¡n los respaldos
 BACKUP_DIR="$HOME/backups-shell"
 
 # Crear la carpeta si no existe
@@ -29,9 +29,9 @@ echo "       -> destino: $BACKUP_FILE"
 TMP_DIR=$(mktemp -d)
 
 # Copiar archivos si existen
-[ -f "$BASHRC" ] && cp "$BASHRC" "$TMP_DIR/" || echo "[WARN] No se encontró .bashrc"
-[ -f "$ZSHRC" ] && cp "$ZSHRC" "$TMP_DIR/" || echo "[WARN] No se encontró .zshrc"
-[ -d "$SCRIPTS_DIR" ] && cp -r "$SCRIPTS_DIR" "$TMP_DIR/scripts" || echo "[WARN] No se encontró carpeta de scripts"
+[ -f "$BASHRC" ] && cp "$BASHRC" "$TMP_DIR/" || echo "[WARN] No se encontrÃ³ .bashrc"
+[ -f "$ZSHRC" ] && cp "$ZSHRC" "$TMP_DIR/" || echo "[WARN] No se encontrÃ³ .zshrc"
+[ -d "$SCRIPTS_DIR" ] && cp -r "$SCRIPTS_DIR" "$TMP_DIR/scripts" || echo "[WARN] No se encontrÃ³ carpeta de scripts"
 
 # Comprimir backup
 tar -czf "$BACKUP_FILE" -C "$TMP_DIR" .
