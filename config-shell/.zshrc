@@ -37,11 +37,19 @@ alias hist='nvim ~/.zsh_history'
 alias saved='source ~/.zshrc'
 alias ls+='ls -a'
 alias cls='clear'
-#alias install='sudo xbps-install'
+alias install='sudo xbps-install'
+alias reinstall='sudo xbps-install -f'
 alias xbps='sudo xbps-install -u xbps'
-#alias remove='sudo xbps-remove'
+alias remove='sudo xbps-remove'
+alias remover='sudo xbps-remove -r'
+alias removeo='sudo xbps-remove -o'
+alias clean='sudo xbps-remove -ROo'
 alias update='sudo xbps-install -Syu'
+alias fetch='fastfetch'
 
+
+# Wine pero para 32bits
+alias wine32='WINEPREFIX=~/.wine32 wine'
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -159,3 +167,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# opencode
+export PATH=/home/bjzr/.opencode/bin:$PATH
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+
