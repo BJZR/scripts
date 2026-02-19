@@ -41,9 +41,9 @@ alias install='sudo xbps-install'
 alias reinstall='sudo xbps-install -f'
 alias xbps='sudo xbps-install -u xbps'
 alias remove='sudo xbps-remove'
-alias remover='sudo xbps-remove -r'
-alias removeo='sudo xbps-remove -o'
-alias clean='sudo xbps-remove -ROo'
+alias remover='sudo xbps-remove -r' # -r  es para eliminar las dependencias
+alias removeo='sudo xbps-remove -o' # -o  es para eliminar archivos huerfanos
+alias clean='sudo xbps-remove -ROo' # -R sirve para remover explicito y -O es para mostrarlos archivos huerfanos
 alias update='sudo xbps-install -Syu'
 alias fetch='fastfetch'
 
