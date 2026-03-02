@@ -14,7 +14,7 @@ echo -e "${RESET}"
 
 # Paso 1: Instalar paquetes
 echo -e "📦 ${AZUL}Instalando paquetes necesarios...${RESET}"
-sudo xbps-install -y pipewire wireplumber blueman libspa-bluetooth pavucontrol bluez-obexd
+sudo xbps-install -y pipewire wireplumber blueman libspa-bluetooth pavucontrol bluez-obex
 # obexd : para inalambricos auriculares, pavu..: para gestiornar la salidas o entrada., wirelumper: dependencia de pipe.. blueman: el backend, libspa..: dependencia de blue. 
 # Paso 2: Agregar usuario al grupo bluetooth
 echo -e "👤 ${AZUL}Agregando el usuario '$USER' al grupo bluetooth...${RESET}"
